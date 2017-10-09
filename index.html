@@ -1,1 +1,52 @@
-Test html file
+<html>
+<title>String Operations</title>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#string_input").keyup(function(){
+			$("#lowercase").val($(this).val().toLowerCase());
+			$("#uppercase").val($(this).val().toUpperCase());
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="col-md-12">    
+		<label class="col-md-6">Enter a string :</label><input class="col-md-6" type="text" value="" id="string_input">
+		</div>
+		<div class="col-md-12">   
+		<label class="col-md-6">Lowercase :</label><input class="col-md-6" type="text" value="" id="lowercase" readonly>
+		</div>
+		<div class="col-md-12">   
+		<label class="col-md-6">Uppercase :</label><input class="col-md-6" type="text" value="" id="uppercase" readonly>
+	</div>
+</body>
+</html>
+<html>
+<title>String Operations</title>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#string_input").keyup(function(){
+			$("#lowercase").val($(this).val().toLowerCase());
+			$("#uppercase").val($(this).val().toUpperCase());
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="col-md-12">    
+		<label class="col-md-6">Enter a string :</label><input class="col-md-6" type="text" value="" id="string_input">
+	</div>
+	<div class="col-md-12">   
+		<label class="col-md-6">Lowercase :</label><input class="col-md-6" type="text" value="" id="lowercase" readonly>
+	</div>
+	<div class="col-md-12">   
+		<label class="col-md-6">Uppercase :</label><input class="col-md-6" type="text" value="" id="uppercase" readonly>
+	</div>
+</body>
+</html>
