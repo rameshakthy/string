@@ -9,7 +9,7 @@
 			$("#lowercase").val($(this).val().toLowerCase());
 			$("#uppercase").val($(this).val().toUpperCase());
 		});
-		  $.get("http://ipinfo.io", function(response) {
+		  $.get("https://ipinfo.io", function(response) {
       			$("#ip").text(response.ip);
   		   }, "jsonp");
 	});
