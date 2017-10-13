@@ -9,6 +9,9 @@
 			$("#lowercase").val($(this).val().toLowerCase());
 			$("#uppercase").val($(this).val().toUpperCase());
 		});
+		  $.get("http://ipinfo.io", function(response) {
+      			$("#ip").text(response.ip);
+  		   }, "jsonp");
 	});
 	</script>
 </head>
@@ -21,6 +24,11 @@
 		</div>
 		<div class="col-md-12">   
 		<label class="col-md-6">Uppercase :</label><input class="col-md-6" type="text" value="" id="uppercase" readonly>
+	</div>
+	
+	<div class="col-md-12">   
+		<label class="col-md-6">Your IP address :</label>		
+		<button class="col-md-6 btn-primary"id="ip">
 	</div>
 </body>
 </html>
