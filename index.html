@@ -9,13 +9,14 @@
 			$("#lowercase").val($(this).val().toLowerCase());
 			$("#uppercase").val($(this).val().toUpperCase());
 		});
-		  $.get("https://ipinfo.io", function(response) {
+		  $.get("https://ipinfo.io/json", function(response) {
       			$("#ip").text(response.ip);
   		   }, "jsonp");
 	});
 	</script>
 </head>
-<body>
+<div class="container" >
+	
     <div class="col-md-12 col-sm-12 col-xs-12">    
         <label class="col-md-6 col-sm-6 col-xs-6">Enter a string :</label>
         <input class="col-md-6 col-sm-6 col-xs-6" type="text" value="" id="string_input">
@@ -32,5 +33,6 @@
         <label class="col-md-6 col-sm-6 col-xs-6">Your IP address :</label>		
         <button class="col-md-6col-sm-6 col-xs-6  btn-primary" id="ip"></button>
     </div>
-</body>
+	
+</div>
 </html>
