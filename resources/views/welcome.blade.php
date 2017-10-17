@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel 
+                    Laravel
                 </div>
 
                 <div class="links">
@@ -89,28 +89,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
-                <div>
-                    <input type="text" value="" placeholder="Type something" class="col-md-12" id="input">
-                    <input type="text" id="result">
-                </div>
             </div>
         </div>
     </body>
 </html>
-@section('script')
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("#input").keyup(function(){
-        $.ajax({
-            url:"/string?value="+$(this).val(),
-            type:"GET",
-            Success: function(data){
-                $("#result").val(data);
-            } 
-        });
-
-    }); 
-});    
-</script>
-@endsection
