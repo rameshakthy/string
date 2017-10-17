@@ -22,7 +22,7 @@
             "database/factories"
         ],
         "psr-4": {
-	"Acme\\": "src/"
+	"App\\": "app/"
 	}
     },
     "autoload-dev": {
@@ -52,5 +52,9 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    }
+    },
+    "repositories": {
+	"packagist": { "url": "https://packagist.org", "type": "composer" 
+                }
+}
 }
